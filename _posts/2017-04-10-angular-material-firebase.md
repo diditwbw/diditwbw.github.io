@@ -15,17 +15,18 @@ ng new fireMaterial
 cd fireMaterial
 ```
 
-* Install Material dalam folder project
+* Install Material dalam folder project*
 ```
 npm install --save @angular/material
 ```
 
-* Install Angular Animation
+* Install Angular Animation*
+
 ```
 npm install --save @angular/animations
 ```
 
-Pada app.module.ts, import code di bawah : 
+Pada `app.module.ts`, import code di bawah:
 
 ```
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -43,29 +44,27 @@ dan
   ],
 ```
 
-
-
-* Theme material, Buka `index.html` pada root folder copy code di bawah :
+* Theme material, Buka `index.html` pada root folder copy code di bawah : *
 
 ```
 <link href="../node_modules/@angular/material/prebuilt-themes/indigo-pink.css" rel="stylesheet">
 ```
 
-* Icon Material, Buka `index.html` pada root folder copy code di bawah :
+* Icon Material, Buka `index.html` pada root folder copy code di bawah : *
 
 ```
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 ```
 
-
 * Gesture: tambahkan `hammerJs` ke dalam folder project, jika kita akan 
-menggunakan beberapa components seperti (md-slide-toggle, md-slider, mdTooltip) menggunakan HammerJS untuk gestures.
+menggunakan beberapa components seperti (md-slide-toggle, md-slider, mdTooltip) menggunakan HammerJS untuk gestures.*
 
 ```
 npm install --save hammerjs
 ```
 
 After installing, import pada app's root module.
+
 ```
 import 'hammerjs';
 ```
@@ -102,7 +101,8 @@ import 'hammerjs';
   }
 ```
 
-* Define SCSS, jika kita meggunakan scss buat file `style.scss` dan copy kode di bawah(haspus terlebih daulu file style.css):
+* Define SCSS, jika kita meggunakan scss buat file `style.scss` dan copy kode di bawah(haspus terlebih daulu file style.css):*
+
 ```
 @import '~@angular/material/theming';
 // Plus imports for other components in your app.
@@ -133,7 +133,7 @@ $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-
 ```
 
 
-* buka file `app.component.html` copy code di bawah :
+* buka file `app.component.html` copy code di bawah :*
 
 ```
 <md-sidenav-container class="app-primary">
@@ -161,15 +161,16 @@ $candy-app-theme: mat-light-theme($candy-app-primary, $candy-app-accent, $candy-
 </span>
 ```
 
-* Untuk merubah warna buka file style.scss dan copy kode di bawah: 
+* Untuk merubah warna buka file style.scss dan copy kode di bawah:*
+
 ```
 $candy-app-primary: mat-palette($mat-light-green);
 $candy-app-accent: mat-palette($mat-light-green, A200, A100, A400);
 ```
 
-* Contoh Script Google Analytic:
+* Contoh Script Google Analytic:*
 
-```html
+```
 <body>
   <material2-app-app>Loading...</material2-app-app>
 
@@ -178,13 +179,13 @@ $candy-app-accent: mat-palette($mat-light-green, A200, A100, A400);
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
     m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-8594346-23', 'auto');
+    ga('create', 'number', 'auto');
     ga('send', 'pageview');
   </script>
 </body>
 ```
 
-* Install ANgularFire2 ke dalam folder project
+* Install ANgularFire2 ke dalam folder project *
 
 ```
 npm install firebase angularfire2 --save

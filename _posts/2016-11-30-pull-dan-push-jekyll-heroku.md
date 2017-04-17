@@ -42,12 +42,20 @@ Unpacking objects: 100% (82/82), done.
 $ cd nama_app/
 {% endhighlight %}
 
+
+
 **Cek repository heroku yang ada di repository local kita, apakah sudah benar nama_app nya.**
 
 {% highlight yaml %}
 $ git remote -v
 heroku  https://git.heroku.com/nama_app.git (fetch)
 heroku  https://git.heroku.com/nama_app.git (push)
+{% endhighlight %}
+
+**Gunakan Pull untuk meremote applikasi yang sudah di buat.**
+
+{% highlight yaml %}
+$ git pull origin master
 {% endhighlight %}
 
 **Jika ada Perubahan pada blog jalankan :**

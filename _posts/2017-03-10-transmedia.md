@@ -566,7 +566,7 @@ Array[3]
 
 
 
-## Error
+## Error 1
 
 ```
 ive got this strange error when cli compiles: Property 'path' does not exist on type 'any[]' :
