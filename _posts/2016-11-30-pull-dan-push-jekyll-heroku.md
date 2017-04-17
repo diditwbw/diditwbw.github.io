@@ -1,12 +1,11 @@
 ---
 layout: post
-title: Pull dan Push jekyll Heroku
-categories: [general, jekyll, heroku]
+title: jekyll di Heroku
+categories: [jekyll, heroku]
 tags: [jekyll, heroku]
-description: jekyll on heroku post.
+description: jekyll on heroku.
 ---
-
-Bagaimana menjalankan pull dan push applikasi yang sudah ada di `heroku`, contoh kasus : pada blog `jekyll` yang sudah terpasang di `heroku` bisa berfungsi untuk update artikel atau ganti theme, saat kita sedang menggunakan komputer lain dan pastinya terkoneksi internet.
+Bagaimana menjalankan pull dan push applikasi yang sudah ada di `heroku`, Tujuannya update blog `jekyll` yang sudah terpasang di `heroku` bisa berfungsi untuk update artikel atau ganti theme. jangan lupa untuk koneksi internrtnya.
 
 - Tools yang di butuhkan :
 
@@ -26,7 +25,6 @@ Bagaimana menjalankan pull dan push applikasi yang sudah ada di `heroku`, contoh
 $heroku login
 {% endhighlight %}
 
-
 **Cloning applikasi dari heroku ke local pc/laptop**
 
 {% highlight yaml %}
@@ -38,13 +36,11 @@ remote: Total 82 (delta 29), reused 0 (delta 0)
 Unpacking objects: 100% (82/82), done.
 {% endhighlight %}
 
-
 **Masuk ke folder nama_app**
 
 {% highlight yaml %}
 $ cd nama_app/
 {% endhighlight %}
-
 
 **Cek repository heroku yang ada di repository local kita, apakah sudah benar nama_app nya.**
 
@@ -54,13 +50,11 @@ heroku  https://git.heroku.com/nama_app.git (fetch)
 heroku  https://git.heroku.com/nama_app.git (push)
 {% endhighlight %}
 
-
 **Jika ada Perubahan pada blog jalankan :**
 
 {% highlight yaml %}
 $ jekyll build
 {% endhighlight %}
-
 
 **Simpan ke repository local**
 
@@ -69,18 +63,15 @@ $ git add .
 $ git commit -m "konfig heroku"
 {% endhighlight %}
 
-
 **Push / deployment ke heroku**
 
 {% highlight yaml %}
 $ git push heroku master
 {% endhighlight %}
 
-
 **Buka url untuk melihat hasilnya**
 
 `https://nama_app.herokuapp.com/`
-
 
 {% highlight yaml %}
 $ git push heroku master
@@ -117,8 +108,6 @@ To https://git.heroku.com/nama_app.git
 7caef36..fb23fdf  master -> master
 {% endhighlight %}
 
-
-
 >**Beberapa contoh Perintah heroku CLI :**
 
 **Remote akses ke Applikasi di heroku**
@@ -128,25 +117,19 @@ $ heroku git:remote -a nama_app
 set git remote heroku to https://git.heroku.com/nama_app.git
 {% endhighlight %}
 
-
 **melihat applikasi yang sudah di buat di heroku :**
-
 
 {% highlight yaml %}
 $ heroku apps
 {% endhighlight %}
 
-
 **Melihat Informasi applikasi yang ada di heroku**
-
 
 {% highlight yaml %}
 $ heroku apps:info
 {% endhighlight %}
 
-
 **Melihat Informasi applikasi tertentu di heroku**
-
 
 {% highlight yaml %}
 $ heroku apps:info --app nama_app
@@ -160,7 +143,6 @@ Slug Size:     150 MB
 Stack:         cadar-14
 Web URL:       https://nama_app.herokuapp.com/
 {% endhighlight %}
-
 
 **Buat applikasi di heroku**
 

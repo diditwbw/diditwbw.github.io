@@ -1,7 +1,5 @@
-diditwbw
-========
+My personal website built using the Jekyll theme dybll.
 
-My Blog
 
 
 
